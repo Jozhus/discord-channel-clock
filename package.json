@@ -1,0 +1,24 @@
+{
+  "name": "discord-channel-clock",
+  "version": "1.0.0",
+  "description": "Display specific timezone clocks via discord channel names.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jozhus/discord-channel-clock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jozhus/discord-channel-clock/issues"
+  },
+  "homepage": "https://github.com/Jozhus/discord-channel-clock#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv-flow": "^3.2.0",
+    "moment-timezone": "^0.5.33"
+  }
+}
