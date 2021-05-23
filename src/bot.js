@@ -12,7 +12,7 @@ client.login(TOKEN);
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`);
 
-    timer = setInterval(updateClocks, 6000);
+    timer = setInterval(updateClocks, 300 * 1000);
 });
 
 client.on("error", () => {
@@ -52,7 +52,8 @@ function updateClocks() {
                         return await clockChannel.delete();
                     }
 
-                    clockChannel.setName(`${moment.tz(now, timezones[clockNumber]).format("zz | HH:mm | MMMM Do")}`);
+
+                    clockChannel.setName(`${moment.tz(now, timezones[clockNumber]).format("z | HH:mm | MMMM Do")}`);
 
                     clockNumber++;
                 });
